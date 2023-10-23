@@ -7,6 +7,7 @@ body {
 h1 {
     color: white;
     text-align: left;
+    margin: 10px;
 }
 .assign {
     background-color: rgb(79, 79, 79);
