@@ -9,6 +9,15 @@ h1 {
     text-align: left;
     margin: 10px;
 }
+h1:hover {
+    color: rgb(0, 238, 255);
+    text-align: left;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(85, 142, 255)
+}
 .assign {
     background-color: rgb(79, 79, 79);
     margin: 10px;
@@ -16,9 +25,17 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: left;
+    border-radius: 10px;
 }
 .assign img {
     width: 200px;
     margin: 10px;
-    padding: 10px;
+    border: 2px solid gray;
+
+}
+.assign img:hover {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid white;
+
 }
