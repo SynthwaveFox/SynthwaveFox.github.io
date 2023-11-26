@@ -1,23 +1,30 @@
 body {
     background-color: rgb(22, 22, 22);
     font-family: Arial, Helvetica, sans-serif;
-    color:white
-    
+    color: white;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    margin: 10px;
+}
+
 h1 {
     color: white;
     text-align: left;
     margin: 10px;
 }
+
 h1:hover {
     color: rgb(0, 238, 255);
-    text-align: left;
-    margin: 10px;
 }
+
 a {
     text-decoration: none;
-    color: rgb(85, 142, 255)
+    color: rgb(85, 142, 255);
 }
+
 .assign {
     background-color: rgb(79, 79, 79);
     margin: 10px;
@@ -27,15 +34,27 @@ a {
     text-align: left;
     border-radius: 10px;
 }
+
 .assign img {
-    width: 200px;
+    width: 100%;
+    max-width: 30%;
+    height: auto;
     margin: 10px;
     border: 2px solid gray;
-
 }
-.assign img:hover {
-    width: 200px;
-    margin: 10px;
-    border: 2px solid white;
 
+.assign img:hover {
+    border: 2px solid white;
+}
+
+.assign-det {
+    margin-top: 10px;
+}
+
+.assign h2 {
+    margin-bottom: 10px;
+}
+
+.assign + .assign {
+    margin-top: 20px;
 }
