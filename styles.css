@@ -31,15 +31,16 @@ a {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: left;
     border-radius: 10px;
 }
 
 .assign img {
-    width: 100%;
-    max-width: 30%;
-    height: auto;
-    margin: 10px;
+    max-width: 100%;
+    max-height: 12rem;
+    display: block;
+    margin: auto;
     border: 2px solid gray;
 }
 
@@ -47,14 +48,37 @@ a {
     border: 2px solid white;
 }
 
-.assign-det {
-    margin-top: 10px;
-}
-
 .assign h2 {
     margin-bottom: 10px;
 }
 
-.assign + .assign {
-    margin-top: 20px;
+/* Media queries for responsiveness */
+
+@media (min-width: 500px) {
+    .tile-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .assign {
+        flex-basis: 41%;
+    }
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1000px) {
+    .assign {
+        flex-basis: 29%;
+    }
+    
+}
+
+@media (min-width: 1500px) {
+    .assign {
+        flex-basis: 22%;
+    }
 }
